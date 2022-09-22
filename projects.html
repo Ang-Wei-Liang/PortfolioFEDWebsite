@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap --> <!-- Scripts are at the bottom-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!---by mattboldt github-->
+</head>
+<body>
+    
+
+ <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="bi bi-emoji-sunglasses"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SP_life.html">Life in SP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career.html">Career Prospects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html" tabindex="-1" aria-disabled="false">Feedback</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Typing Animation -->
+<section>
+     <div class="container-fluid containerE">
+     <h1>This is a <span class="auto-type spanE"></span></h1>
+
+</div>
+</section>
+
+<button id="btnScrollToTop" onclick="scrollUp()">
+  <i class="bi bi-arrow-up-circle"></i>
+</button>
+
+
+   <!-- Section 1 -->
+<section>
+  <div class="bg-dark col text-center py-5">
+    <h1 class="text-white">Short Term Memory Test (Numbers)</h1>
+
+    <p>
+      <a class="btn btn-info m-3 w-25" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Rules</a>
+      
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body w-75 mx-auto">
+            Click Start to Start. A number appears on screen. Press no if you have not seen it, yes, if you have. There will be more and more numbers for you to keep track of and it will become difficult. Get 30 points to win, 0 lives and you are out. Have Fun!
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button id="startButton" class="bg-primary m-3"> Start </button> 
+    <p class=" lead text-center text-light " id="startA3"></p>
+    <p class=" lead text-center text-light " id="startA2"></p>
+    <p class=" lead text-center text-light " id="startA1"></p>
+
+    <button id="buttonYes" class="bg-success m-3"> Yes </button>
+    <button id="buttonNo" class="bg-warning m-3"> No </button>
+    
+    <p class=" lead text-center text-light" id="startA4"></p>
+    </div>
+</section>
+
+
+
+  <!-- Section 2 -->
+
+<section>
+  <div class="bg-success col text-center py-5">
+    <h1 class="text-white">Number Memory Test</h1>
+
+    <p>
+      <a class="btn btn-info m-3 w-25" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Rules</a>
+      
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body w-75 mx-auto">
+            Click Start and key in the number to Start. A number appears on screen, and it will last for 5 seconds. Memorise it. Afterwards there will be a textbox for you to fill in that number. If you get it right, you will gain 1 point and the number will increase to make it more difficult. Good Luck!
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button id="startButton2" class="bg-primary m-3"> Start </button> 
+    <p class="lead text-center text-light " id="startB3"></p>
+    <p class=" lead text-center text-light " id="startB2"></p>
+
+    <div class="lead text-center text-light" id="countdown">How far can you go?</div>
+    
+
+    <p class=" lead text-center text-light " id="startB1"></p>
+
+    <input id="userInput2"><br><br>
+
+    <button id="submitButton" class="bg-warning m-3"> Enter </button> 
+
+    
+
+    
+    
+    <p class=" lead text-center text-light" id="messageLose"></p>
+    </div>
+</section>
+
+
+<footer>
+  
+  <div class=" bg-dark d-flex justify-content-center align-items-center text-white">
+    
+
+    <a class="btn-floating btn-info btn-lg  p-3 m-4" href="https://www.google.com/gmail/about/">
+      <span class="bi bi-envelope-plus-fill"></span>
+    </a>
+    <a class="btn-floating btn-success btn-lg  p-3 m-4" href="https://www.youtube.com/">
+      <span><i class="bi bi-youtube"></i></span>
+    </a>
+    <a class="btn-floating btn-warning btn-lg  p-3 m-4" href="https://discord.com/">
+      <span><i class="bi bi-discord"></i></span>
+    </a>
+    
+  </div>
+</footer>
+
+<p class="text-center footerColor"> &copy; Ang Wei Liang FED Project 2022 - Gmail: angweiliang19@gmail.com - <a href = "README.txt" target="_blank" rel="noopener noreferrer" class = "Credits">(Image Credits)</a></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+   <script src="./Scripts/script.js"></script>
+   <script src="./Scripts/script2.js"></script>
+   <script src="./Scripts/script3.js"></script>
+   <script src="./Scripts/script4.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/*Common styling*/
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none; 
+    text-decoration-thickness: 3px;
+    text-shadow: 1px 1px lightgray;
+}
+
+.nav-item :hover {
+    background-color: bisque;
+}
+
+/*Footer*/
+footer a {
+    max-width: 50px;
+}
+
+.backgroundColorB{
+    background-color: purple;
+    border: yellow;
+}
+
+.btnB {
+    min-width: 5rem;
+}
+
+.footer{ 
+    width: 100%;
+    border: 5px solid black;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footertext{
+    text-align: center;
+}
+
+.footerColor {
+    background-color: yellow;
+}
+
+/*Button To Scroll To Top*/
+#btnScrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+#btnScrollToTop:hover {
+    background-color: darkblue;
+}
+
+
+
+/* About Me */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Hello.jpg); /*Photo by Artem Bryzgalov on Unsplash*/
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+}
+
+#text-box{
+    width: 30%;
+    background-color: rgba(11, 49, 65, 0.8);
+    border-color: black;
+    color: white;
+    position: relative;
+    left: 35%;
+    top: 200px;
+    text-align:center;
+    line-height: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.askA {
+    background-color: brown;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.imgFace {
+    opacity: 0;
+    /*filter: alpha(opacity=40);*/
+    position: relative;
+    left: 5.6rem;
+
+    border-image-slice: 27 27 27 27;
+    border-image-width: 15px 15px 15px 15px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source:
+    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png");
+    border-style: solid;
+
+}
+
+#imgP {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 15px #888888;
+}
+
+
+.Aimg1 {
+    filter: grayscale(30%);
+    transform: scale(0.95);
+}
+
+.Aimg2 {
+    filter: grayscale(30%);
+
+    border-image-slice: 13 13 13 13 fill;
+    border-image-width: 5px 5px 5px 5px;
+    border-image-outset: 5px 5px 5px 5px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+    border-style: solid;
+}
+
+
+
+
+/* Life in SP*/
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/Class.jpg);
+    vertical-align: bottom;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+
+}
+#text-box2{
+    width: 30%;
+    background-color: rgba(11, 49, 65, 0.8);
+    border: 2px solid black;
+    color: white;
+    position: relative;
+    left: 35%;
+    top: 100px;
+    text-align:center;
+    line-height: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Reveal Cards Upon Scrolling Down*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/*Table*/
+
+th {
+    background-color: white;  
+    color: black;
+    border-color: black;
+}
+
+th:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+    border-color:black;
+}
+
+tr {
+    height: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(0, 255, 247);
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+    border-color:black;
+}
+
+td {
+    text-align: center;
+}
+
+
+/*Career Prospects*/
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/Ball.jpg); /*Photo by Drew Beamer on Unsplash*/
+    vertical-align: bottom;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+}
+
+#text-box3{
+    overflow: hidden;
+    width: 30%;
+    border: 2px solid whitesmoke;
+    color: lavender;
+    background-color: rgba(95, 95, 204, 0.45);
+    position: relative;
+    left: 35%;
+    top: 200px;
+    text-align:center;
+    line-height: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#backgroundCareer{
+    width: 100%;
+    background-image: url(Images/Stars.jpg); /*Photo by Diego PH on Unsplash*/
+    vertical-align: bottom;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+    border: 3px solid white;
+    }
+
+
+/* Future Careers - Images and Cards */
+
+.CcolLeft {
+    transform: rotate(-.01turn);
+}
+
+ .CcolLeftb{
+    background-color: red;
+    opacity: 75%;
+    transform: rotate(-.007turn);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ .CcolMiddleb{
+     background-color: lightblue;
+     opacity: 75%;
+     transform: rotate(-.007turn);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ .CcolRightb{
+     background-color: yellowgreen;
+     opacity: 75%;
+     transform: rotate(-.007turn);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ .Cimg {
+    filter: hue-rotate(90deg);
+}
+
+.Cimg11, .Cimg22, .Cimg33{
+filter: saturate(6);
+
+}
+
+
+/*Projects*/
+.containerE {
+    width: 100%;
+    height: 100vh;
+    background-color: #2b323c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerE h1 {
+   font-size: 80px;
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.spanE{                     /*Typing Animation*/
+    color: yellow;
+}
+
+#startButton, #buttonYes, #buttonNo {
+    margin: auto;
+    align-self: center;
+}
+
+
+/*Feedback*/
+
+ .header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/Feedback.jpg); /*Photo by AbsolutVision on Unsplash*/
+    vertical-align: bottom;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+ }
+
+#text-box4{
+    overflow: hidden;
+    width: 30%;
+    border: 2px solid lightyellow;
+    color: white;
+    background-color: rgb(0,0,128,80%);
+    position: relative;
+    left: 60%;
+    top: 200px;
+    text-align:center;
+    /*line-height: 18px;*/
+    line-height: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.backgroundFeedback{ 
+    border: 5px double black;
+    background-color: purple;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/Galaxy.jpg); /*Ivana Cajina on Unsplash*/
+    vertical-align: bottom;
+    background-size:cover;
+    position: relative;
+}
+
+/*Form Styling*/
+
+fieldset{
+    border: solid 4px yellowgreen;
+    border-radius: 6px;
+    background-color: lightcyan;
+}
+
+.legend {
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    color: black;
+}
+
+label{
+    display: block;
+    margin-top: 1em;
+}
+
+input {
+    padding: .5em;
+    border: solid 1px darkgreen
+}
+
+input:invalid, textarea:invalid{
+    background-color: lightyellow;
+}
+
+input:valid, textarea:valid{
+    background-color: rgb(224, 249, 255);
+}
+
+input[type=text],input[type=email]{
+    /*width: 100%;*/
+    margin-top:12px;
+    border-width: 3px;
+}
+
+input[type=text]:focus, input[type=email]:focus,textarea:focus{
+    background-color: whitesmoke;
+}
+
+input[type=range]{
+    /*width: 93%;*/
+    margin-top: 8px;
+}
+
+
+#rangebox1,#rangebox2,#rangebox3{
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding:12px 20px;
+    border: 3px solid violet;
+    resize: none;
+}
+
+
+.btn1 {
+    background-color: hsl(151, 79%, 42%);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+    margin: 5%;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
+
+.btn.one{
+    float: left;
+}
+.btn.two{
+      float: right;
+}
+

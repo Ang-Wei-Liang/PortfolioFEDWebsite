@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap --> <!-- Scripts are at the bottom-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+<!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-emoji-sunglasses"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="SP_life.html">Life in SP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Career Prospects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html" tabindex="-1" aria-disabled="false">Feedback</a> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Start Background-->
+
+   <section class="header bg-image">
+       <div id="text-box">
+       <br><h1>About Me</h1>
+       <p>Hi there! I am Ang Wei Liang, scroll down to know more about me!</p>
+       </div>
+   </section>
+
+
+    <button id="btnScrollToTop" onclick="scrollUp()">
+    <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+
+    <div class="align-items-center border  askA">
+    <p class=" lead text-center text-light"> Hello. What is your name? </p>
+    <input id="userInput"><br><br>
+    <button onclick="myFunction1()"> Submit </button>
+    <p class="p-3" id="message"></p>
+  
+</div>
+  
+<section class="mainbackground1 mt-0">
+    <section class="p-3  bg-success">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <img id="Face" src="./Images/Face.jpg" draggable="true" ondragstart="drag(event)" class="w-50 h-25 p-4 imgFace mx-auto rounded" alt="Face">
+             
+            </div>
+            <div class="col-md p-4 border border-5 border-primary bg-light">
+              <h2>Introduction</h2>
+              <p class="lead">
+                I am Ang Wei Liang, a full-time student in the Singapore Polytechnic Diploma in Information Technology course. I am in class 3.
+                I aim to achieve the best version of myself and my dream is to develop an application that can change the world.
+                <button onclick="myFunction()">Face Reveal</button>
+      
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="p-5 bg-dark text-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-7 col-sm-10 p-5 border-success">
+              <h2>Interests</h2>
+              <p class="lead">
+                I like to listen to music on my bed, because I often overthink and music helps me to put these thoughts aside. I really appreciate music because it relates to the emotions I am feeling and reminds me of my nostalgic past. Everyone has a shared experience of the song and their own interpretation of it.
+              </p>
+              <p class="lead">
+                For example, the theme song for the japanese trading card game "buddyfight" reminds me of the time my brother and I would catch the latest episode, buy the cards and play the game. Sadly, he is now more interested in using his phone and we do not spend much time together anymore.
+              </p>
+              <p class="lead">
+                I also like to play games such as brawl stars and watch esports, as they are entertaining and bring me excitement.
+              </p>
+              <h3> I dislike: </h3>
+                          <ul>
+                              <li><p class="lead">Cockroaches</p></li>
+                              <li><p class="lead">Crowded and noisy places</p></li>
+                              <li><p class="lead">Work not meeting my expectations</p></li>
+                          </ul>
+      
+      
+            </div>
+            <div class="col-md">
+              <figure><img src="./Images/Interests1.jpg" class="img-fluid p-4 pt-4 rounded Aimg1 border border-success border-3" alt="Spotify" /><figcaption><p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spotify </figcaption></figure>  <!-- Photo by Alexander Shatov on Unsplash -->
+                
+          
+              <figure><img src="./Images/Interests2.jpg" class="img-fluid p-4 rounded Aimg2" alt="Brawl Stars" /><figcaption><p><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Brawl Stars </figcaption></figure>  <!-- Brawlstars Mobile Homepage -->
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+</section>
+
+<section class="p-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <!---Insert carosell here-->
+            <div id="carouselExampleInterval" class="carousel slide myValuesContainer" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./Images/Past1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Images/Past2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/Street.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/Food.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- End of Carosell -->
+
+
+          </div>
+          <div class="col-md p-5">
+            <h2>My Past</h2>
+            <p class="lead">
+              I was from Chua Chu Kang Secondary School where I learnt to serve, grow and excel. I was a stressed mugger because grades were a priority to me, and my efforts paid off as I managed to score well.
+            </p>
+            <p class="lead"> My Co-Curricular activity was Saint John Brigade where I learnt foot-drills and first aid. Examples of injuries included fractures, sprains and burns.
+                As a uniformed group, we were often shouted at by the officers and while it was stressful, it played an integral role in shaping me to become more disciplined and resilient.
+            </p>
+        
+              <p class="lead"> My family and I went to Genting Highlands Malaysia at the end of 2019. We explored the hotel there which was the world's largest.
+            </p>
+          </div>
+        </div>
+      </div>
+        
+  </section>
+
+
+
+<section class="maincolor3">
+    <section class="p-5 bg-primary text-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+      
+              <h2>Personality</h2>
+              <p class="lead">
+                I have the ISTJ personality type, also known as the logistician. Because I was brought up under strict parents who restricted how I spent my time and money, I did not have a desire to buy anything that was not needed, such as a movie ticket or a keychain.
+              </p>
+              <p class="lead"> I became purpose driven, in which I would only act according to what I should do.
+              </p>
+              
+              <p class="lead">
+                Because of this, I found it hard to make friends, because I have no desire to create small talk and find out more about them. I work best in group projects where there is an objective to be completed, and hence a reason for me to communicate with the team.
+              </p>
+            </div>
+            <div class="col-md">
+              <img src="./Images/Personality.jpg" class="img-fluid" id="imgP" alt="hello" />  <!-- Photo by Lukas Rychvalsky on Unsplash -->
+            </div>
+          </div>
+        </div>
+      
+    </section>
+</section>
+
+
+
+<footer>
+  
+  <div class=" bg-dark d-flex justify-content-center align-items-center text-white">
+    
+
+    <a class="btn-floating btn-info btn-lg  p-3 m-4" href="https://www.google.com/gmail/about/">
+      <span class="bi bi-envelope-plus-fill"></span>
+    </a>
+    <a class="btn-floating btn-success btn-lg  p-3 m-4" href="https://www.youtube.com/">
+      <span><i class="bi bi-youtube"></i></span>
+    </a>
+    <a class="btn-floating btn-warning btn-lg  p-3 m-4" href="https://discord.com/">
+      <span><i class="bi bi-discord"></i></span>
+    </a>
+    
+  </div>
+</footer>
+
+<p class="text-center footerColor"> &copy; Ang Wei Liang FED Project 2022 - Gmail: angweiliang19@gmail.com - <a href = "README.txt" target="_blank" rel="noopener noreferrer" class = "Credits">(Image Credits)</a></p>
+        
+    <script src="./Scripts/script.js"></script>
+    <script src="./Scripts/script2.js"></script>
+    <script src="./Scripts/script3.js"></script>
+    <script src="./Scripts/script4.js"></script>
+
+
+</body>
+</html>

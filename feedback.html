@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap --> <!-- Scripts are at the bottom-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="bi bi-emoji-sunglasses"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SP_life.html">Life in SP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="career.html">Career Prospects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="feedback.html" tabindex="-1" aria-disabled="false">Feedback</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Start Background-->
+      <section class="header4 bg-image img-fluid">
+        <div id="text-box4">
+            <br><h1>Feedback</h1>
+            <p><b class="blockquote">"Feedback is the breakfast of champions."<br>~ Ken Blanchard</b></p>
+        </div>
+    </section>
+    
+    <button id="btnScrollToTop" onclick="scrollUp()">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+   <!--Section 1 -->
+
+  <div class="backgroundFeedback">
+    
+    <form id="form"  method="GET"><!--form_results.html-->
+
+    <fieldset class="m-5 p-5 col-lg-10 col-md-9 col-sm-10 mx-auto formcolour">
+      <legend class= "legend h1 my-4">Hello there! Thank you for providing your feedback! <i class="bi bi-chat-quote-fill"></i></legend>
+
+      
+
+
+      <div class="row justify-content-md-center text-center">
+        <div class="form-group mb-4">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+        </div>
+        <div class="form-group mb-4">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+      
+      </div>
+    
+
+  <!-- radio button selection -->
+  <div class="col-md-6 form-group justify-content-md-center">  
+    <h2 class="my-5 mt-3">I like this website.</h2>
+    <div class="form-check mb-2">
+      <input class="form-check-input " type="radio" name="exampleForm" id="radioExample1" />
+      <label class="form-check-label" for="radioExample1">
+        Strongly Agree
+      </label>
+    </div>
+
+    <div class="form-check mb-2">
+      <input class="form-check-input" type="radio" name="exampleForm" id="radioExample2"/>
+      <label class="form-check-label" for="radioExample2">
+        Agree
+      </label>
+
+    </div>
+    <div class="form-check mb-2">
+      <input class="form-check-input " type="radio" name="exampleForm" id="radioExample3" checked/>
+      <label class="form-check-label" for="radioExample3">
+        Agree-Disagree
+      </label>
+
+    </div>
+    <div class="form-check mb-2">
+      <input class="form-check-input " type="radio" name="exampleForm" id="radioExample4" />
+      <label class="form-check-label" for="radioExample3">
+        Disagree
+      </label>
+
+    </div>
+    <div class="form-check mb-2">
+      <input class="form-check-input " type="radio" name="exampleForm" id="radioExample5" />
+      <label class="form-check-label" for="radioExample3">
+        Strongly Disagree
+      </label>
+
+    </div>
+
+  </div>
+
+  <h2 class="my-5 mt-3">Please rate the following:
+    <br>
+    (0 = Poor; 10 = Great)</h2>
+
+  <div class="form group w-100">
+    <p class="text-center">Content</p>
+    
+    <label for="customRange3" class="form-label">0</label>
+    <label for="customRange3" class="form-label float-end">10</label>
+
+
+<input type="range" name="contentRate" id="customRange3" class="w-100" value="5" step="1" min="0" max="10">
+</div>
+
+
+<div class="form group w-100">
+    <p class="text-center">Aesthetics</p>
+    
+    <label for="customRange3" class="form-label">0</label>
+    <label for="customRange3" class="form-label float-end">10</label>
+
+
+<input type="range" name="contentRate" id="customRange4" class="w-100" value="5" step="1" min="0" max="10">
+</div>
+
+
+<div class="form group w-100">
+  <p class="text-center">Organisation and Ease of Navigation</p>
+
+<label for="customRange3" class="form-label">0</label>
+<label for="customRange3" class="form-label float-end">10</label>
+
+  <input type="range" name="contentRate" id="customRange5" class="w-100" value="5" step="1" min="0" max="10">
+</div>
+
+
+<div class="form group w-100" >
+    <label for="textarea1">What are your thoughts about the website?</label><br>
+    <textarea rows="4" cols="50"  name="textarea1" class="w-100" id="textarea1" required></textarea>
+</div>
+<br>
+<div class="form group w-100" >
+    <label for="textarea2">Any other feedback? </label><br>
+    <textarea rows="4" cols="50" name="textarea2" class="w-100" id="textarea2" required></textarea>
+</div>
+<br>
+Form Validation Message:<div id="error"></div>
+<br>
+    <button class=" btn1 one btn1 ml-4 px-3 py-1 btn btn-success" type="reset">Reset</button>
+    <button type="submit" value="submit" id="submit" class="ml-4 px-3 py-1 btn btn-primary btn1">Submit</button>
+    <!-- <button class="btn two" type="submit" onclick="alert">Submit</button>-->
+
+</fieldset>
+</form>
+
+</div>
+
+   <!-- Footer -->
+<footer>
+  
+  <div class=" bg-dark d-flex justify-content-center align-items-center text-white">
+    
+
+    <a class="btn-floating btn-info btn-lg  p-3 m-4" href="https://www.google.com/gmail/about/">
+      <span class="bi bi-envelope-plus-fill"></span>
+    </a>
+    <a class="btn-floating btn-success btn-lg  p-3 m-4" href="https://www.youtube.com/">
+      <span><i class="bi bi-youtube"></i></span>
+    </a>
+    <a class="btn-floating btn-warning btn-lg  p-3 m-4" href="https://discord.com/">
+      <span><i class="bi bi-discord"></i></span>
+    </a>
+    
+  </div>
+</footer>
+
+<p class="text-center footerColor"> &copy; Ang Wei Liang FED Project 2022 - Gmail: angweiliang19@gmail.com - <a href = "README.txt" target="_blank" rel="noopener noreferrer" class = "Credits">(Image Credits)</a></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <script src="./Scripts/script.js"></script>
+    <script src="./Scripts/script2.js"></script>
+    <script src="./Scripts/script3.js"></script>
+    <script src="./Scripts/script4.js"></script>
+
+</body>
+</html>
+
+    
+    
